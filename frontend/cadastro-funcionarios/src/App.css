@@ -1,0 +1,219 @@
+/* Paleta de Cores */
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #f0f4f8;
+  --text-color: #333;
+  --link-color: #3b82f6;
+  --button-hover: #388e3c;
+}
+
+/* Estilização do Corpo */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Principal */
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Link de Cadastro */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+table th,
+table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Botões */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 4px 0;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  padding: 8px;
+  transition: color 0.3s;
+}
+
+.icon-button:hover {
+  color: var(--button-hover);
+}
+
+.icon-button svg {
+  vertical-align: middle;
+}
+/* Botão criar */
+.create-button {
+  background-color: var(--link-color);
+  color: white;
+  display: flexbox;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.create-button:hover {
+  background-color: #2563eb;
+}
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 12px;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: var(--button-hover);
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.salary {
+  white-space: nowrap;
+}
+
+/* Filtros */
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filter-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-row:first-child {
+  margin-bottom: 10px;
+}
+
+.filter-container input[type="text"],
+.filter-container input[type="date"],
+.filter-container input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  min-width: 200px;
+  flex: 1 1 200px;
+}
+
+.filter-container input::placeholder {
+  color: #aaa;
+}
